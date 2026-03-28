@@ -79,25 +79,13 @@ python profile_fixed.py
 
 ### 5. Visualise with snakeviz (Jupyter Notebook)
 
-Launch Jupyter:
+Open the included notebook:
 
 ```bash
-jupyter notebook
+jupyter notebook profiling_snakeviz.ipynb
 ```
 
-In a notebook cell, load snakeviz and profile interactively:
-
-```python
-%load_ext snakeviz
-```
-
-```python
-%%snakeviz
-from run_all_systems import run_all_systems
-run_all_systems()
-```
-
-This produces an interactive icicle chart showing the call hierarchy and time spent in each function.
+Run the cells to produce an interactive icicle chart showing the call hierarchy and time spent in each function.
 
 ### 6. Visualise with snakeviz (command line)
 
